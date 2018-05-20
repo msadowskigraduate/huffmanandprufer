@@ -51,4 +51,12 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
         this.rightNode = rightNode;
     }
 
+    @Override
+    public String toString() {
+        return "HuffmanNode{" +
+                "character=" + character +
+                ", frequency=" + frequency +
+                ", hash=" + hashCode() +
+                '}';
+    }
 }

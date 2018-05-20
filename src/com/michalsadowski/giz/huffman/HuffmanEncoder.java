@@ -9,20 +9,20 @@ import java.util.Map;
  */
 public class HuffmanEncoder {
 
-    public void encode(String textToEncode) {
-       encodeText(CharacterConverter.convert(textToEncode));
+    public Map<Character, Integer> encode(String textToEncode) {
+       return encodeText(CharacterConverter.convert(textToEncode));
     }
 
-    public void encode(Character[] charsToEncode) {
-        encodeText(charsToEncode);
+    public Map<Character, Integer> encode(Character[] charsToEncode) {
+        return encodeText(charsToEncode);
     }
 
-    private void encodeText(Character[] charsToEncode) {
+    private Map<Character, Integer> encodeText(Character[] charsToEncode) {
         Map<Character, Integer> occuranceFreqMap = new HashMap<>();
-        createFrequenceMap(occuranceFreqMap, charsToEncode);
+        return createFrequenceMap(occuranceFreqMap, charsToEncode);
     }
 
-    private void createFrequenceMap(Map<Character, Integer> occuranceFreqMap, Character[] charsToEncode) {
+    private Map<Character, Integer> createFrequenceMap(Map<Character, Integer> occuranceFreqMap, Character[] charsToEncode) {
         Arrays.stream(charsToEncode).forEach( character -> {
             if(occuranceFreqMap.containsKey(character)) {
                 occuranceFreqMap.compute(character, (x,y) -> y +1 );
@@ -31,5 +31,6 @@ public class HuffmanEncoder {
                 occuranceFreqMap.put(character, 1);
             }
         });
+        return occuranceFreqMap;
     }
 }
