@@ -1,4 +1,4 @@
-package com.michalsadowski.giz.huffman;
+package com.michalsadowski.giz.huffman.service;
 
 import com.michalsadowski.giz.huffman.domain.HuffmanNode;
 

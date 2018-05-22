@@ -1,5 +1,7 @@
 package com.michalsadowski.giz.huffman.domain;
 
+import java.util.Objects;
+
 /**
  * Created by sadowsm3 on 19.05.2018
  */
@@ -58,5 +60,19 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
                 ", frequency=" + frequency +
                 ", hash=" + hashCode() +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        HuffmanNode that = (HuffmanNode) o;
+        return Objects.equals(character, that.character) &&
+                Objects.equals(frequency, that.frequency);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(character, frequency, leftNode, rightNode);
     }
 }

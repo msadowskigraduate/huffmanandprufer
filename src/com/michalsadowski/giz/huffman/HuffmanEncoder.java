@@ -1,5 +1,7 @@
 package com.michalsadowski.giz.huffman;
 
+import com.michalsadowski.giz.huffman.service.CharacterConverter;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;

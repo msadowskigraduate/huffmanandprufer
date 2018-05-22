@@ -1,4 +1,4 @@
-package com.michalsadowski.giz.tree;
+package com.michalsadowski.giz.huffman;
 
 import com.michalsadowski.giz.huffman.domain.HuffmanNode;
 import org.graphstream.graph.Graph;
@@ -15,16 +15,16 @@ import static com.michalsadowski.giz.huffman.service.HuffmanUtils.hasRightChild;
  */
 public class HuffmanTreeDraw {
     private static Integer edgeID = 1;
+
     public static void drawHuffmanTree(HuffmanNode node) {
         Graph graph = new SingleGraph("Huffman Tree");
         Node rootNode = graph.addNode(getNodeName(node)); //draw root node
         rootNode.setAttribute("ui.label", node.getCharacter() == null ? node.getFrequency() : node.getCharacter().toString());
         drawNode(graph, rootNode, node);
         System.out.println(graph.getNodeSet().size());
-        Viewer viewer = graph.display(false);
+        Viewer viewer = graph.display(true);
         HierarchicalLayout h1 = new HierarchicalLayout();
         viewer.enableAutoLayout(h1);
-        graph.display();
     }
 
     private static void drawNode(Graph graph, Node parentNode, HuffmanNode node) {
