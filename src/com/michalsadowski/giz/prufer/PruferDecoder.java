@@ -4,6 +4,8 @@ import com.michalsadowski.giz.prufer.domain.PruferCode;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.SingleGraph;
+import org.graphstream.ui.layout.HierarchicalLayout;
+import org.graphstream.ui.view.Viewer;
 
 import java.util.*;
 import java.util.function.Predicate;
@@ -24,7 +26,10 @@ public class PruferDecoder {
         System.out.println(originalVertices);
         restoreOriginalTreeFromPruferCode(originalVertices, pruferCode.getIdentifierList(), graph);
         System.out.println(originalVertices);
-        graph.display();
+        addLiteralLabellingToNodes(graph, pruferCode.getNodeList());
+        HierarchicalLayout h1 = new HierarchicalLayout();
+        Viewer viewer = graph.display();
+        viewer.enableAutoLayout(h1);
     }
 
     private Set<Integer> restoreOriginalVertices(Set<Integer> originalVertices, PruferCode pruferCode) {
@@ -38,7 +43,7 @@ public class PruferDecoder {
         List<String> pruferCodeList = new ArrayList<>(Arrays.asList(pruferCode));
         System.out.println(pruferCodeList);
         Iterator iterator = pruferCodeList.listIterator();
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             String pruferVertex = iterator.next().toString();
             Optional<Integer> min = originalVertices.stream().filter(findNotPresentInOriginalCode(pruferCodeList)).min(Integer::compareTo);
             if (min.isPresent()) {
@@ -48,9 +53,9 @@ public class PruferDecoder {
             }
         }
 
-        if(originalVertices.size() == 2) {
+        if (originalVertices.size() == 2) {
             Iterator originalIterator = originalVertices.iterator();
-            while(originalIterator.hasNext()) {
+            while (originalIterator.hasNext()) {
                 String one = originalIterator.next().toString();
                 String two = originalIterator.next().toString();
                 addNodes(graph, one, two);
@@ -71,5 +76,20 @@ public class PruferDecoder {
             node2.setAttribute("ui.label", min);
         }
         graph.addEdge(pruferVertex.concat(" ").concat(min), node1, node2);
+    }
+
+    private void addLiteralLabellingToNodes(Graph graph, String[] labels) {
+        Collection<Node> nodeSet = graph.getNodeSet();
+        Iterator nodeIterator = nodeSet.iterator();
+        Iterator labelIterator = Arrays.stream(labels).iterator();
+        while (nodeIterator.hasNext()) {
+            Node node = (Node) nodeIterator.next();
+            if (node.getDegree() < 2 && labelIterator.hasNext()) {
+                node.clearAttributes();
+                String label = (String) labelIterator.next();
+                System.out.println(label);
+                node.setAttribute("ui.label", label);
+            }
+        }
     }
 }
