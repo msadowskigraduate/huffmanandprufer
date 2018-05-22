@@ -1,12 +1,12 @@
 package com.michalsadowski.giz.huffman.domain;
 
 import java.util.Objects;
+import java.util.Random;
 
 /**
  * Created by sadowsm3 on 19.05.2018
  */
 public class HuffmanNode implements Comparable<HuffmanNode> {
-
     private final Character character;
     private final Integer frequency;
     private HuffmanNode leftNode;
@@ -58,7 +58,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
         return "HuffmanNode{" +
                 "character=" + character +
                 ", frequency=" + frequency +
-                ", hash=" + hashCode() +
+                ", UUID = " + new Random().nextInt() +
                 '}';
     }
 
@@ -68,7 +68,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
         if (o == null || getClass() != o.getClass()) return false;
         HuffmanNode that = (HuffmanNode) o;
         return Objects.equals(character, that.character) &&
-                Objects.equals(frequency, that.frequency);
+               Objects.equals(frequency, that.frequency);
     }
 
     @Override
