@@ -8,6 +8,8 @@ import java.util.Map;
  * Created by sadowsm3 on 20.05.2018
  */
 public class HuffmanUtils {
+    private static Integer NODE_NUMBER = 1;
+
     public static boolean isChildless(HuffmanNode node) {
         return node != null && node.getRightNode() == null && node.getLeftNode() == null;
     }
@@ -25,7 +27,7 @@ public class HuffmanUtils {
     }
 
     public static void assignNodeNumeration(HuffmanNode huffmanNode, Map<HuffmanNode, Integer> map) {
-        map.put(huffmanNode, map.size() + 1);
+        map.put(huffmanNode, NODE_NUMBER++);
         if (hasLeftChild(huffmanNode)) {
             assignNodeNumeration(huffmanNode.getLeftNode(), map);
         }

@@ -2,25 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aeeb2d0f-4ad9-44ff-abe0-c2a6abe1e661" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/domain/PruferCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/utils/PruferUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/services/PruferFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/gui/FileSystemModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/gui/GUIConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/gui/JForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/gui/JForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/services/exception/InvalidFileException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prufner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Prufer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/CharacterConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/CharacterConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanEncoder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/MapToNodeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/MapToNodeConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeDraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeDraw.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/domain/HuffmanNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/domain/HuffmanNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/HuffmanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/HuffmanUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/services/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/services/HuffmanFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/tree/HuffmanTreeDraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeDraw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/services/HuffmanFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/services/HuffmanFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/michalsadowski/giz/services/PruferFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalsadowski/giz/services/PruferFileReader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +41,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="43">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PruferDecoder.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferDecoder.java">
+      <file leaf-file-name="PruferEncoder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="221">
+              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,13 +62,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdjacencyListGraph.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-core/2.0.0-SNAPSHOT/gs-core-2.0.0-SNAPSHOT.jar!/org/graphstream/graph/implementations/AdjacencyListGraph.class">
+      <file leaf-file-name="MapToNodeConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/MapToNodeConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
+            <state relative-caret-position="157">
+              <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PruferRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding>
-                <element signature="e#4832#4833#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,31 +88,64 @@
       <file leaf-file-name="HuffmanTreeDraw.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeDraw.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="-200">
+              <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PruferCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/domain/PruferCode.java">
+      <file leaf-file-name="HuffmanTreeBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+            <state relative-caret-position="86">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="e#659#660#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HuffmanRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HuffmanUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/HuffmanUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#467#468#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HuffmanNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/domain/HuffmanNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#894#895#0" expanded="true" />
+                <element signature="e#926#927#0" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
+                <element signature="e#1066#1067#0" expanded="true" />
+                <element signature="e#1232#1233#0" expanded="true" />
+                <element signature="e#1931#1932#0" expanded="true" />
+                <element signature="e#2009#2010#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,19 +180,26 @@
         <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/tree/HuffmanTreeDraw.java" />
         <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeBuilder.java" />
         <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/utils/PruferUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/HuffmanUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanRunner.java" />
         <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferRunner.java" />
-        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/domain/HuffmanNode.java" />
-        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java" />
         <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/services/Readers.java" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/domain/PruferCode.java" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/JForm.form" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/JForm.java" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/gui/FileSystemModel.java" />
         <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/services/FileReader.java" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferDecoder.java" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/services/exception/InvalidFileException.java" />
         <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/services/HuffmanFileReader.java" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/gui/GUIConstants.java" />
         <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/services/PruferFileReader.java" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/gui/JForm.java" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/gui/JForm.form" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanRunner.java" />
         <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeDraw.java" />
         <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/domain/PruferCode.java" />
-        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferDecoder.java" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/domain/HuffmanNode.java" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java" />
+        <option value="$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/HuffmanUtils.java" />
       </list>
     </option>
   </component>
@@ -163,10 +210,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2892" />
-    <option name="y" value="-12" />
-    <option name="width" value="2904" />
-    <option name="height" value="1584" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1943" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -238,13 +285,6 @@
               <item name="prufer" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Prufer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prufer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="giz" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -259,6 +299,8 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="108" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="235" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -267,6 +309,9 @@
     <property name="project.structure.side.proportion" value="0.33106014" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sadowsm3\Documents\Prufer\src\com\michalsadowski\giz\gui" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.michalsadowski.giz.services" />
       <recent name="com.michalsadowski.giz.huffman" />
@@ -326,7 +371,7 @@
       <workItem from="1526725059753" duration="4488000" />
       <workItem from="1526732885650" duration="14153000" />
       <workItem from="1526833082921" duration="17813000" />
-      <workItem from="1526971734101" duration="6008000" />
+      <workItem from="1526971734101" duration="27172000" />
     </task>
     <task id="LOCAL-00001" summary="Huffman coding">
       <created>1526824446054</created>
@@ -335,14 +380,28 @@
       <option name="project" value="LOCAL" />
       <updated>1526824446054</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Prufer Encode/Decode">
+      <created>1526978888740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526978888740</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Prufer nodes are now being correctly labeled.">
+      <created>1526980406786</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1526980406786</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42462000" />
+    <option name="totallyTimeSpent" value="63626000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Key Promoter X" order="3" />
@@ -359,18 +418,18 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41830066" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45796064" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="DB Browser" order="2" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32897604" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27124184" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291592" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49624062" visible="true" weight="0.17110874" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49624062" visible="true" weight="0.21781376" />
       <window_info anchor="bottom" id="SonarLint" order="7" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -382,6 +441,44 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="DB Execution Console" order="8" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Image Layers" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291592" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="DB Browser" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" sideWeight="0.505618" side_tool="true" weight="0.2534413" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="CheckStyle" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32897604" />
+      <window_info anchor="bottom" id="SonarLint" order="13" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Key Promoter X" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291592" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49624062" visible="true" weight="0.1902834" />
+      <window_info id="Learn" order="8" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45796064" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -390,8 +487,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Huffman coding" />
-    <option name="LAST_COMMIT_MESSAGE" value="Huffman coding" />
+    <MESSAGE value="Added Prufer Encode/Decode" />
+    <MESSAGE value="Prufer nodes are now being correctly labeled." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prufer nodes are now being correctly labeled." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -434,13 +535,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java</url>
-          <line>28</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java</url>
-          <line>38</line>
+          <line>39</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -448,29 +549,35 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java</url>
-          <line>42</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java</url>
-          <line>51</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java</url>
-          <line>15</line>
+          <line>16</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferDecoder.java</url>
-          <line>42</line>
+          <url>file://$PROJECT_DIR$/src/com/michalsadowski/giz/gui/JForm.java</url>
+          <line>43</line>
           <properties />
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/HuffmanUtils.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/michalsadowski/giz/tree/HuffmanTreeDraw.java</url>
@@ -481,7 +588,7 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -492,107 +599,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/services/PruferFileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/domain/PruferCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/HuffmanUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/domain/HuffmanNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#1066#1067#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="335" selection-start-line="14" selection-start-column="335" selection-end-line="14" selection-end-column="335" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -723,45 +729,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/services/Readers.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/services/HuffmanFileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/services/PruferFileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/MapToNodeConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/HuffmanConst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -769,77 +737,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/domain/HuffmanNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#1066#1067#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/CharacterConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/HuffmanUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeDraw.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -882,10 +783,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/Main.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.desktop/javax/swing/JTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="-3152">
+          <caret line="150" column="13" selection-start-line="150" selection-start-column="13" selection-end-line="150" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/gui/FileSystemModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-314">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#2880#2881#0" expanded="true" />
+            <element signature="e#2919#2920#0" expanded="true" />
+            <element signature="e#3004#3005#0" expanded="true" />
+            <element signature="e#3046#3047#0" expanded="true" />
+            <element signature="e#3143#3144#0" expanded="true" />
+            <element signature="e#3187#3188#0" expanded="true" />
+            <element signature="e#3241#3242#0" expanded="true" />
+            <element signature="e#3281#3282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/nio/file/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="98" column="17" selection-start-line="98" selection-start-column="17" selection-end-line="98" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/services/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.desktop/javax/swing/AbstractButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="2307" selection-start-line="2307" selection-end-line="2307" />
+          <folding>
+            <element signature="e#83030#83031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/services/exception/InvalidFileException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/services/HuffmanFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/gui/GUIConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="91" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/gui/JForm.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/gui/JForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -894,10 +875,125 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="-252">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/services/PruferFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/domain/HuffmanNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="true" />
+            <element signature="e#2009#2010#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/MapToNodeConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/prufer/PruferRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeDraw.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/HuffmanTreeBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalsadowski/giz/huffman/service/HuffmanUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
           </folding>
         </state>
       </provider>

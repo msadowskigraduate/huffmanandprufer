@@ -17,8 +17,8 @@ public class HuffmanRunner {
     private final HuffmanEncoder huffmanEncoder;
     private final HuffmanTreeBuilder huffmanTreeBuilder;
 
-    public Map<Character, String> encodingMap = new HashMap<>();
-    public Map<HuffmanNode, Integer> valuemap = new HashMap<>();
+    private Map<Character, String> encodingMap = new HashMap<>();
+    private Map<HuffmanNode, Integer> valuemap = new HashMap<>();
 
     public HuffmanRunner(HuffmanEncoder huffmanEncoder, HuffmanTreeBuilder huffmanTreeBuilder) {
         this.huffmanEncoder = huffmanEncoder;
@@ -30,8 +30,16 @@ public class HuffmanRunner {
                 MapToNodeConverter.convert(huffmanEncoder.encode(text)));
         huffmanTreeBuilder.huffmanCodeGenerator(huffmanNode, encodingMap, HUFFMAN_INIT_CODE);
         encodingMap.forEach((x,y) -> System.out.println(x + " " + y));
-        drawHuffmanTree(huffmanNode);
         HuffmanUtils.assignNodeNumeration(huffmanNode, valuemap);
         valuemap.forEach((x,y) -> System.out.println(x.toString() + " : " + y));
+        drawHuffmanTree(huffmanNode, valuemap);
+    }
+
+    public Map<Character, String> getEncodingMap() {
+        return encodingMap;
+    }
+
+    public Map<HuffmanNode, Integer> getValuemap() {
+        return valuemap;
     }
 }

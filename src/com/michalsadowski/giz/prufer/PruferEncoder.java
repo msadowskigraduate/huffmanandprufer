@@ -10,6 +10,7 @@ import static com.michalsadowski.giz.huffman.service.HuffmanUtils.isChildless;
 /**
  * Created by sadowsm3 on 20.05.2018
  */
+//FIXME
 public class PruferEncoder {
 
     private Predicate<Map.Entry<HuffmanNode, Integer>> isAParentToThatNode(HuffmanNode node) {
@@ -25,11 +26,11 @@ public class PruferEncoder {
     }
 
     private void encodeTreeToPrufer(Map<HuffmanNode, Integer> map, List<Integer> pruferSequence, Integer initialSize) {
-        if(initialSize > pruferSequence.size() + 2) {
+        if (initialSize > pruferSequence.size() + 2) {
             Optional<Map.Entry<HuffmanNode, Integer>> entry = findLeafWithLowestLabel(map); //find leaf with lowest label
-            if(entry.isPresent()) {
+            if (entry.isPresent()) {
                 pruferSequence.add(findNeighbouringNode(map, entry.get().getKey()));// add parent node
-                map.remove(entry.get().getKey()); //remove it from the tree
+                map.remove(entry.get().getKey()); //remove it from the tree + cant remove node after it has been modified!!!
                 encodeTreeToPrufer(map, pruferSequence, initialSize);
             }
         }
@@ -41,14 +42,18 @@ public class PruferEncoder {
 
     private Integer findNeighbouringNode(Map<HuffmanNode, Integer> map, HuffmanNode node) {
         Optional<Map.Entry<HuffmanNode, Integer>> entry = map.entrySet().stream().filter(isAParentToThatNode(node)).findFirst();
-        if(entry.isPresent()) {
-           if(entry.get().getKey().getRightNode().equals(node)) {
-               entry.get().getKey().setRightNode(null);
-           }
-           else if(entry.get().getKey().getRightNode().equals(node)){
-               entry.get().getKey().setLeftNode(null);
-           }
+        if (entry.isPresent()) {
+            HuffmanNode foundNode = entry.get().getKey();
+            if (foundNode.getRightNode().equals(node)) {
+                map.remove(entry.get().getKey());
+                foundNode.setRightNode(null);
+                map.put(foundNode, entry.get().getValue());
+            } else if (foundNode.getLeftNode().equals(node)) {
+                map.remove(entry.get().getKey());
+                foundNode.setLeftNode(null);
+                map.put(foundNode, entry.get().getValue());
+            }
         }
-       return entry.get().getValue();
+        return entry.get().getValue();
     }
 }

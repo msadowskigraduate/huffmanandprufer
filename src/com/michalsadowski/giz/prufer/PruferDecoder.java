@@ -19,17 +19,16 @@ public class PruferDecoder {
         return vertex -> !pruferVertex.contains(vertex.toString());
     }
 
-    public void decode(PruferCode pruferCode) {
+    public String decode(PruferCode pruferCode) {
         Set<Integer> originalVertices = new HashSet<>();
         originalVertices = restoreOriginalVertices(originalVertices, pruferCode);
         Graph graph = new SingleGraph("Prufer");
-        System.out.println(originalVertices);
         restoreOriginalTreeFromPruferCode(originalVertices, pruferCode.getIdentifierList(), graph);
-        System.out.println(originalVertices);
         addLiteralLabellingToNodes(graph, pruferCode.getNodeList());
         HierarchicalLayout h1 = new HierarchicalLayout();
         Viewer viewer = graph.display();
         viewer.enableAutoLayout(h1);
+        return originalVertices.toString();
     }
 
     private Set<Integer> restoreOriginalVertices(Set<Integer> originalVertices, PruferCode pruferCode) {
