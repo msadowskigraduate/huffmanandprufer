@@ -1,6 +1,7 @@
 package com.michalsadowski.giz.prufer;
 
 import com.michalsadowski.giz.prufer.domain.PruferCode;
+import com.michalsadowski.giz.services.GraphViewer;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.SingleGraph;
@@ -25,9 +26,7 @@ public class PruferDecoder {
         Graph graph = new SingleGraph("Prufer");
         restoreOriginalTreeFromPruferCode(originalVertices, pruferCode.getIdentifierList(), graph);
         addLiteralLabellingToNodes(graph, pruferCode.getNodeList());
-        HierarchicalLayout h1 = new HierarchicalLayout();
-        Viewer viewer = graph.display();
-        viewer.enableAutoLayout(h1);
+        GraphViewer.viewGraph(graph);
         return originalVertices.toString();
     }
 

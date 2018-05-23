@@ -1,6 +1,7 @@
 package com.michalsadowski.giz.huffman;
 
 import com.michalsadowski.giz.huffman.domain.HuffmanNode;
+import com.michalsadowski.giz.services.GraphViewer;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.SingleGraph;
@@ -18,27 +19,25 @@ import static com.michalsadowski.giz.huffman.service.HuffmanUtils.hasRightChild;
 public class HuffmanTreeDraw {
     private static Integer edgeID = 1;
 
-    public static void drawHuffmanTree(HuffmanNode node, Map<HuffmanNode, Integer> valueMap) {
+    public static void drawHuffmanTree(HuffmanNode node, Map<Integer, HuffmanNode> valueMap) {
         Graph graph = new SingleGraph("Huffman Tree");
         Node rootNode = graph.addNode(getNodeName(node)); //draw root node
-        rootNode.setAttribute("ui.label", valueMap.get(node));
+        rootNode.setAttribute("ui.label", getNodeLabel(node, valueMap));
         drawNode(graph, rootNode, node, valueMap);
         System.out.println(graph.getNodeSet().size());
-        Viewer viewer = graph.display(true);
-        HierarchicalLayout h1 = new HierarchicalLayout();
-        viewer.enableAutoLayout(h1);
+        GraphViewer.viewGraph(graph);
     }
 
-    private static void drawNode(Graph graph, Node parentNode, HuffmanNode node, Map<HuffmanNode, Integer> valueMap) {
+    private static void drawNode(Graph graph, Node parentNode, HuffmanNode node, Map<Integer,HuffmanNode> valueMap) {
         if(hasRightChild(node)) {
             Node rightChildNode = graph.addNode(getNodeName(node.getRightNode()));
-            rightChildNode.setAttribute("ui.label", valueMap.get(node.getRightNode()));
+            rightChildNode.setAttribute("ui.label", getNodeLabel(node.getRightNode(), valueMap));
             graph.addEdge(getEdgeID(), parentNode, rightChildNode);
             drawNode(graph, rightChildNode, node.getRightNode(), valueMap);
         }
         if(hasLeftChild(node)) {
             Node leftChildNode = graph.addNode(getNodeName(node.getLeftNode()));
-            leftChildNode.setAttribute("ui.label", valueMap.get(node.getLeftNode()));
+            leftChildNode.setAttribute("ui.label", getNodeLabel(node.getLeftNode(), valueMap));
             graph.addEdge(getEdgeID(), parentNode, leftChildNode);
             drawNode(graph, leftChildNode, node.getLeftNode(), valueMap);
         }
@@ -54,5 +53,9 @@ public class HuffmanTreeDraw {
             return node.getCharacter().toString();
         }
         return node.toString();
+    }
+
+    private static Integer getNodeLabel(HuffmanNode node, Map<Integer, HuffmanNode> map) {
+        return map.entrySet().stream().filter(x-> x.getValue() == node).findFirst().map(Map.Entry::getKey).get();
     }
 }

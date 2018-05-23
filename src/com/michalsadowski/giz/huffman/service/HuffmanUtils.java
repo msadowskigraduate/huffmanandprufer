@@ -26,8 +26,8 @@ public class HuffmanUtils {
         return node.getFrequency() != null && node.getCharacter() != null;
     }
 
-    public static void assignNodeNumeration(HuffmanNode huffmanNode, Map<HuffmanNode, Integer> map) {
-        map.put(huffmanNode, NODE_NUMBER++);
+    public static void assignNodeNumeration(HuffmanNode huffmanNode, Map<Integer,HuffmanNode> map) {
+        map.put(NODE_NUMBER++, huffmanNode);
         if (hasLeftChild(huffmanNode)) {
             assignNodeNumeration(huffmanNode.getLeftNode(), map);
         }

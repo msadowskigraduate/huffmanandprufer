@@ -18,7 +18,7 @@ public class HuffmanRunner {
     private final HuffmanTreeBuilder huffmanTreeBuilder;
 
     private Map<Character, String> encodingMap = new HashMap<>();
-    private Map<HuffmanNode, Integer> valuemap = new HashMap<>();
+    private Map<Integer, HuffmanNode> valuemap = new HashMap<>();
 
     public HuffmanRunner(HuffmanEncoder huffmanEncoder, HuffmanTreeBuilder huffmanTreeBuilder) {
         this.huffmanEncoder = huffmanEncoder;
@@ -39,7 +39,7 @@ public class HuffmanRunner {
         return encodingMap;
     }
 
-    public Map<HuffmanNode, Integer> getValuemap() {
+    public Map<Integer, HuffmanNode> getValuemap() {
         return valuemap;
     }
 }
