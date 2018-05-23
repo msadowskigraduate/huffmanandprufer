@@ -1,7 +1,6 @@
 package com.michalsadowski.giz.prufer.domain;
 
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * Created by sadowsm3 on 21.05.2018

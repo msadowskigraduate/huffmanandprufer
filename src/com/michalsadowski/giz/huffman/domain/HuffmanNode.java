@@ -68,7 +68,9 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
         if (o == null || getClass() != o.getClass()) return false;
         HuffmanNode that = (HuffmanNode) o;
         return Objects.equals(character, that.character) &&
-               Objects.equals(frequency, that.frequency);
+                Objects.equals(frequency, that.frequency) &&
+                Objects.equals(leftNode, that.leftNode) &&
+                Objects.equals(rightNode, that.rightNode);
     }
 
     @Override

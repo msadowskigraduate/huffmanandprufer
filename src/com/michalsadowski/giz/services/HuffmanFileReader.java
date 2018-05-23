@@ -18,6 +18,6 @@ public class HuffmanFileReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        throw new InvalidFileException();
+        throw new InvalidFileException(SharedConst.GENERAL_ERROR_CODE);
     }
 }

@@ -5,4 +5,7 @@ package com.michalsadowski.giz.huffman.service;
  */
 public class HuffmanConst {
     public static final String HUFFMAN_INIT_CODE = "";
+
+    private HuffmanConst() {
+    }
 }
