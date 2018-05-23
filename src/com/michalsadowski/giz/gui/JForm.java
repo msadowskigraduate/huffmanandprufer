@@ -56,7 +56,8 @@ public class JForm {
                 huffmanRunner.run(fileContents);
                 List<Integer> pruferCode = pruferRunner.encode(huffmanRunner.getValuemap());
                 StatusLabel.setText(GUIConstants.DONE);
-                textArea1.append(GUIConstants.PRUFER_CODE + pruferCode.toString());
+                textArea1.append(GUIConstants.PRUFER_CODE_PREFIX + pruferCode.toString());
+                textArea1.append(GUIConstants.HUFFMAN_ENCODING_MAP_PREFIX + huffmanRunner.getEncodingMap());
             } catch(InvalidFileException el) {
                 StatusLabel.setText(GUIConstants.UNSUPPORTED_FILE_CONTENTS);
             }
