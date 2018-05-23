@@ -14,11 +14,11 @@ import static com.michalsadowski.giz.huffman.service.HuffmanUtils.isChildless;
 //FIXME
 public class PruferEncoder {
 
-    private Predicate<Map.Entry<HuffmanNode, Integer>> isAParentToThatNode(HuffmanNode node) {
-        return parent -> parent.getKey().getLeftNode() == node || parent.getKey().getRightNode() == node;
+    private Predicate<Map.Entry<Integer, HuffmanNode>> isAParentToThatNode(HuffmanNode node) {
+        return parent -> parent.getValue().getLeftNode() == node || parent.getValue().getRightNode() == node;
     }
 
-    public List<Integer> encode(Map<HuffmanNode, Integer> map) {
+    public List<Integer> encode(Map<Integer, HuffmanNode> map) {
         System.out.println("**************************PRUFER CODE**********************************");
         List<Integer> pruferSequence = new ArrayList<>();
         encodeTreeToPrufer(map, pruferSequence, map.size());
@@ -26,35 +26,35 @@ public class PruferEncoder {
         return pruferSequence;
     }
 
-    private void encodeTreeToPrufer(Map<HuffmanNode, Integer> map, List<Integer> pruferSequence, Integer initialSize) {
+    private void encodeTreeToPrufer(Map<Integer, HuffmanNode> map, List<Integer> pruferSequence, Integer initialSize) {
         if (initialSize > pruferSequence.size() + 2) {
-            Optional<Map.Entry<HuffmanNode, Integer>> entry = findLeafWithLowestLabel(map); //find leaf with lowest label
+            Optional<Map.Entry<Integer, HuffmanNode>> entry = findLeafWithLowestLabel(map); //find leaf with lowest label
             if (entry.isPresent()) {
-                pruferSequence.add(findNeighbouringNode(map, entry.get().getKey()));// add parent node
+                pruferSequence.add(findNeighbouringNode(map, entry.get().getValue()));// add parent node
                 map.remove(entry.get().getKey()); //remove it from the tree + cant remove node after it has been modified!!!
                 encodeTreeToPrufer(map, pruferSequence, initialSize);
             }
         }
     }
 
-    private Optional<Map.Entry<HuffmanNode, Integer>> findLeafWithLowestLabel(Map<HuffmanNode, Integer> map) {
-        return map.entrySet().stream().filter(entry -> isChildless(entry.getKey())).min(Comparator.comparingInt(Map.Entry::getValue));
+    private Optional<Map.Entry<Integer, HuffmanNode>> findLeafWithLowestLabel(Map<Integer, HuffmanNode> map) {
+        return map.entrySet().stream().filter(entry -> isChildless(entry.getValue())).min(Comparator.comparingInt(Map.Entry::getKey));
     }
 
-    private Integer findNeighbouringNode(Map<HuffmanNode, Integer> map, HuffmanNode node) {
-        Optional<Map.Entry<HuffmanNode, Integer>> entry = map.entrySet().stream().filter(isAParentToThatNode(node)).findFirst();
+    private Integer findNeighbouringNode(Map<Integer, HuffmanNode> map, HuffmanNode node) {
+        Optional<Map.Entry<Integer, HuffmanNode>> entry = map.entrySet().stream().filter(isAParentToThatNode(node)).findFirst();
         if (entry.isPresent()) {
-            HuffmanNode foundNode = entry.get().getKey();
+            HuffmanNode foundNode = entry.get().getValue();
             if (foundNode.getRightNode().equals(node)) {
                 map.remove(entry.get().getKey());
                 foundNode.setRightNode(null);
-                map.put(foundNode, entry.get().getValue());
+                map.put(entry.get().getKey(), foundNode);
             } else if (foundNode.getLeftNode().equals(node)) {
                 map.remove(entry.get().getKey());
                 foundNode.setLeftNode(null);
-                map.put(foundNode, entry.get().getValue());
+                map.put(entry.get().getKey(), foundNode);
             }
         }
-        return entry.get().getValue();
+        return entry.get().getKey();
     }
 }

@@ -15,7 +15,7 @@ public class PruferRunner {
         this.pruferEncoder = pruferEncoder;
     }
 
-    public List<Integer> encode(Map<HuffmanNode, Integer> nodeMap) {
+    public List<Integer> encode(Map< Integer, HuffmanNode> nodeMap) {
         return pruferEncoder.encode(nodeMap);
     }
 }
