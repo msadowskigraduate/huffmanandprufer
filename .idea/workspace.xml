@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3097106-7c86-4d12-b7ee-fb0a1b1b69d1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prufer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Prufer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/michalsadowski/giz/gui/JForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/michalsadowski/giz/gui/JForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/michalsadowski/giz/huffman/HuffmanRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/michalsadowski/giz/huffman/HuffmanRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/michalsadowski/giz/prufer/PruferEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/michalsadowski/giz/prufer/PruferEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,17 +36,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JForm.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JForm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/michalsadowski/giz/gui/JForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="376">
+              <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
               <folding>
                 <element signature="method#$$$setupUI$$$#0;class#JForm#0" expanded="true" />
                 <element signature="method#$$$setupUI$$$#0;class#JForm#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="PruferEncoder.java" pinned="false" current-in-tab="false">
@@ -113,18 +123,6 @@
               <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-              <folding>
-                <element signature="n#build#0;n#project#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -203,70 +201,6 @@
             </path>
             <path>
               <item name="Prufer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prufer" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prufer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prufer" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prufer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prufer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prufer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prufer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prufer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prufer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prufer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prufer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="giz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prufer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prufer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="giz" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prufer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prufer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="giz" type="462c0819:PsiDirectoryNode" />
-              <item name="huffman" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prufer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prufer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="giz" type="462c0819:PsiDirectoryNode" />
-              <item name="prufer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prufer" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -278,6 +212,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -370,14 +305,14 @@
       <workItem from="1527091301423" duration="7098000" />
       <workItem from="1527157116030" duration="719000" />
       <workItem from="1527157902775" duration="181000" />
-      <workItem from="1527158142093" duration="757000" />
+      <workItem from="1527158142093" duration="1004000" />
     </task>
-    <task id="LOCAL-00001" summary="Huffman coding">
-      <created>1526824446054</created>
+    <task id="LOCAL-00001" summary="Fixed multiple run issue.">
+      <created>1527158914624</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1526824446054</updated>
+      <updated>1527158914624</updated>
     </task>
     <task id="LOCAL-00002" summary="Added Prufer Encode/Decode">
       <created>1526978888740</created>
@@ -428,10 +363,11 @@
       <option name="project" value="LOCAL" />
       <updated>1527152648069</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="774000" />
+    <option name="totallyTimeSpent" value="1021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -441,7 +377,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.43137255" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.32897604" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.27665246" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -459,10 +395,10 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.43137255" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.43137255" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49624062" visible="true" weight="0.1977612" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.32897604" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49624062" visible="true" weight="0.1977612" />
       <window_info anchor="bottom" id="SonarLint" order="7" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -529,7 +465,8 @@
     <MESSAGE value="Fixed text file loading" />
     <MESSAGE value="Improved GUI" />
     <MESSAGE value="Various bug fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Various bug fixes." />
+    <MESSAGE value="Fixed multiple run issue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed multiple run issue." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -640,13 +577,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/michalsadowski/giz/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -771,7 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml" />
     <entry file="file://$PROJECT_DIR$/out/production/Prufer/com/michalsadowski/giz/Main.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar!/org/bouncycastle/mail/smime/SMIMEEnvelopedGenerator.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -952,14 +881,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/michalsadowski/giz/gui/JForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="376">
+          <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
           <folding>
             <element signature="method#$$$setupUI$$$#0;class#JForm#0" expanded="true" />
             <element signature="method#$$$setupUI$$$#0;class#JForm#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
