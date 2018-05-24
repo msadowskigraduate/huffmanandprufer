@@ -18,14 +18,15 @@ public class HuffmanRunner {
     private final HuffmanTreeBuilder huffmanTreeBuilder;
 
     private Map<Character, String> encodingMap = new HashMap<>();
-    private Map<Integer, HuffmanNode> valuemap = new HashMap<>();
 
     public HuffmanRunner(HuffmanEncoder huffmanEncoder, HuffmanTreeBuilder huffmanTreeBuilder) {
         this.huffmanEncoder = huffmanEncoder;
         this.huffmanTreeBuilder = huffmanTreeBuilder;
     }
 
-    public void run(String text) {
+    public Map<Integer, HuffmanNode> run(String text) {
+        clearResources();
+        Map<Integer, HuffmanNode> valuemap = new HashMap<>();
         HuffmanNode huffmanNode = huffmanTreeBuilder.buildTree(
                 MapToNodeConverter.convert(huffmanEncoder.encode(text)));
         huffmanTreeBuilder.huffmanCodeGenerator(huffmanNode, encodingMap, HUFFMAN_INIT_CODE);
@@ -33,13 +34,16 @@ public class HuffmanRunner {
         HuffmanUtils.assignNodeNumeration(huffmanNode, valuemap);
         valuemap.forEach((x,y) -> System.out.println(x.toString() + " : " + y));
         drawHuffmanTree(huffmanNode, valuemap);
+        return valuemap;
     }
 
     public Map<Character, String> getEncodingMap() {
         return encodingMap;
     }
 
-    public Map<Integer, HuffmanNode> getValuemap() {
-        return valuemap;
+    private void clearResources() {
+        if(encodingMap.size() > 0) {
+            encodingMap = new HashMap<>();
+        }
     }
 }

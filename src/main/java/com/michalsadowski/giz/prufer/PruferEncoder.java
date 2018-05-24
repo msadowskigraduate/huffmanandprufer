@@ -1,7 +1,6 @@
 package com.michalsadowski.giz.prufer;
 
 import com.michalsadowski.giz.huffman.domain.HuffmanNode;
-import com.michalsadowski.giz.services.SharedConst;
 
 import java.util.*;
 import java.util.function.Predicate;
