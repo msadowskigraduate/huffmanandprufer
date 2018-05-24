@@ -34,6 +34,6 @@ public class PruferFileReader {
     }
 
     private static boolean validateArray(String[] array) {
-        return Arrays.stream(array).anyMatch(String::isEmpty);
+        return Arrays.stream(array).noneMatch(String::isEmpty);
     }
 }

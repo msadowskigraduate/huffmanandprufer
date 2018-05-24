@@ -9,9 +9,10 @@ public class GUIConstants {
     public static final String SUPPORTED_FILE_TYPES = ".txt";
     public static final String ANALYZING = "Analysing...";
     public static final String DONE = "Done.";
-    public static final String PRUFER_CODE_PREFIX = "Prufer code for given file: ";
-    public static final String HUFFMAN_ENCODING_MAP_PREFIX = "Huffman Encoding Map: ";
+    public static final String PRUFER_CODE_PREFIX = "Prufer code for given file: \n";
+    public static final String HUFFMAN_ENCODING_MAP_PREFIX = "Huffman Encoding Map: \n";
     public static final String IDLE = "Choose a file to start working. ";
+    public static final String COMPUTATION_DONE = "Graph will now open in separate window. ";
 
     private GUIConstants() {
     }

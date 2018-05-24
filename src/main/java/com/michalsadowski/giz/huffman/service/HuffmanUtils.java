@@ -35,4 +35,8 @@ public class HuffmanUtils {
             assignNodeNumeration(huffmanNode.getRightNode(), map);
         }
     }
+
+    public static String stringfyEncodingMap(Map<Character, String> encodingMap) {
+        return encodingMap.entrySet().stream().map(x -> x.getKey() + " -> " + x.getValue() + "\n").reduce("", String::concat);
+    }
 }
